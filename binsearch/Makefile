@@ -1,4 +1,4 @@
-compile = clang++ -std=c++17 -O3 -march=native
+compile = /usr/bin/g++ -std=c++17 -O3 
 
 %: %.cc binsearch.hh Makefile
 	$(compile) $< -o $@ 
